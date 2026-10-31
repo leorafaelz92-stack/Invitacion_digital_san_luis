@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invitación · Promoción 2026 — Unidad Educativa San Luis</title>
+    <meta
+      name="description"
+      content="Invitación digital a la ceremonia de graduación de la Promoción 2026 de la Unidad Educativa San Luis. 15 de diciembre de 2026, 10:00 a. m."
+    />
+    <meta name="theme-color" content="#101010" />
+
+    <!-- Tipografías aprobadas por el diseño: Cormorant Garamond y Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- ======================================================
+         6.1. Apertura cinematográfica (Foto 5 como imagen principal)
+         ====================================================== -->
+      <header class="apertura" id="apertura">
+        <img
+          class="apertura__imagen"
+          src="assets/foto-5.jpg"
+          alt="Estudiantes de la Promoción 2026 con toga y birrete en el patio de la institución"
+        />
+        <div class="apertura__velo" aria-hidden="true"></div>
+
+        <div class="apertura__contenido">
+          <div class="escudo">
+            <img
+              id="escudo-imagen"
+              src="assets/escudo.jpg"
+              alt="Escudo de la Unidad Educativa San Luis"
+              width="84"
+              height="84"
+            />
+            <!-- Marcador provisional si el escudo no carga -->
+            <span class="escudo__marcador" aria-hidden="true" hidden
+              >U.E.S.L.</span
+            >
+          </div>
+
+          <p class="apertura__institucion">Unidad Educativa San Luis</p>
+          <p class="apertura__subtitulo">Ceremonia de graduación</p>
+          <h1 class="apertura__titulo">Promoción <span>2026</span></h1>
+          <p class="apertura__fecha">
+            <time datetime="2026-12-15T10:00:00-04:00"
+              >15 de diciembre de 2026 — 10:00 a. m.</time
+            >
+          </p>
+
+          <a
+            class="apertura__continuar"
+            href="#mensaje"
+            aria-label="Continuar hacia la invitación"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="26"
+              height="26"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <!-- ======================================================
+         6.2. Mensaje de invitación
+         ====================================================== -->
+      <section class="seccion" id="mensaje">
+        <div class="seccion__interior">
+          <p class="creciente">Promoción 2026</p>
+          <h2 class="seccion__titulo">Nuestra invitación</h2>
+          <span class="filigrana" aria-hidden="true"></span>
+          <p class="frase">
+            «Un camino lleno de aprendizajes, recuerdos y sueños que hoy nos
+            reúne para celebrar un nuevo comienzo.»
+          </p>
+          <p class="texto">
+            Después de años de aprendizaje, esfuerzo y momentos que quedarán
+            para siempre, llega el momento de celebrar una nueva etapa.
+          </p>
+          <p class="texto">
+            Con mucha alegría, la <strong>Promoción 2026</strong> de la
+            <strong>Unidad Educativa San Luis</strong> invita a familiares y
+            amigos a ser parte de este momento tan especial.
+          </p>
+        </div>
+      </section>
+
+      <!-- ======================================================
+         6.3. Cuenta regresiva (America/La_Paz)
+         ====================================================== -->
+      <section class="seccion seccion__oscuro" id="cuenta-regresiva">
+        <div class="seccion__interior">
+          <h2 class="seccion__titulo">El gran día se acerca</h2>
+          <span class="filigrana" aria-hidden="true"></span>
+          <div
+            class="contador"
+            id="contador"
+            role="timer"
+            aria-label="Cuenta regresiva hasta el 15 de diciembre de 2026, 10:00"
+          >
+            <div class="contador__caja">
+              <span class="contador__numero" id="c-dias">–</span
+              ><span class="contador__etiqueta">días</span>
+            </div>
+            <div class="contador__caja">
+              <span class="contador__numero" id="c-horas">–</span
+              ><span class="contador__etiqueta">horas</span>
+            </div>
+            <div class="contador__caja">
+              <span class="contador__numero" id="c-minutos">–</span
+              ><span class="contador__etiqueta">minutos</span>
+            </div>
+            <div class="contador__caja">
+              <span class="contador__numero" id="c-segundos">–</span
+              ><span class="contador__etiqueta">segundos</span>
+            </div>
+          </div>
+          <p class="contador__listo" id="contador-listo" hidden>
+            ¡Hoy es el gran día!
+          </p>
+        </div>
+      </section>
+
+      <!-- ======================================================
+         6.4. Información del evento
+         ====================================================== -->
+      <section class="seccion" id="informacion">
+        <div class="seccion__interior seccion__interior--estrecho">
+          <h2 class="seccion__titulo">Información del evento</h2>
+          <span class="filigrana" aria-hidden="true"></span>
+
+          <dl class="info">
+            <div class="info__fila">
+              <dt class="info__termino">Institución</dt>
+              <dd class="info__valor">Unidad Educativa San Luis</dd>
+            </div>
+            <div class="info__fila">
+              <dt class="info__termino">Evento</dt>
+              <dd class="info__valor">Ceremonia de graduación</dd>
+            </div>
+            <div class="info__fila">
+              <dt class="info__termino">Promoción</dt>
+              <dd class="info__valor">2026</dd>
+            </div>
+            <div class="info__fila">
+              <dt class="info__termino">Fecha</dt>
+              <dd class="info__valor">
+                <time datetime="2026-12-15">15 de diciembre de 2026</time>
+              </dd>
+            </div>
+            <div class="info__fila">
+              <dt class="info__termino">Hora</dt>
+              <dd class="info__valor">
+                <time datetime="10:00-04:00">10:00 a. m.</time>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ======================================================
+         6.5. Ubicación
+         ====================================================== -->
+      <section class="seccion seccion__oscuro" id="ubicacion">
+        <div class="seccion__interior seccion__interior--estrecho">
+          <h2 class="seccion__titulo">¿Dónde nos encontramos?</h2>
+          <span class="filigrana" aria-hidden="true"></span>
+          <p class="texto">
+            Consulta la ubicación del evento en el siguiente enlace para
+            acompañarnos en este día tan importante.
+          </p>
+          <a
+            class="boton"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://maps.app.goo.gl/NREAuVg7oye8GTDE8"
+            >Ver ubicación</a
+          >
+        </div>
+      </section>
+
+      <!-- ======================================================
+         6.6. Programa de actividades (CRONOGRAMA PROVISIONAL)
+         Para editar: agregar o cambiar <li data-hora="…"> con el
+         horario deseado. Este programa NO es definitivo hasta que
+         la institución lo confirme.
+         ====================================================== -->
+      <section class="seccion" id="programa">
+        <div class="seccion__interior seccion__interior--estrecho">
+          <h2 class="seccion__titulo">Programa de actividades</h2>
+          <span class="filigrana" aria-hidden="true"></span>
+          <p class="programa__nota">Cronograma provisional</p>
+
+          <ol class="cronograma">
+            <!-- EDITABLE: cada elemento admite nueva hora/actividad -->
+            <li class="cronograma__evento">
+              <span class="cronograma__hora">10:00–10:15</span>
+              <p class="cronograma__actividad">Recepción y bienvenida</p>
+            </li>
+            <li class="cronograma__evento">
+              <span class="cronograma__hora">10:15–10:25</span>
+              <p class="cronograma__actividad">Entrada de la Promoción 2026</p>
+            </li>
+            <li class="cronograma__evento">
+              <span class="cronograma__hora">10:25–10:35</span>
+              <p class="cronograma__actividad">
+                Apertura y palabras de bienvenida
+              </p>
+            </li>
+            <li class="cronograma__evento">
+              <span class="cronograma__hora">10:35–10:50</span>
+              <p class="cronograma__actividad">
+                Palabras de las autoridades de la institución
+              </p>
+            </li>
+            <li class="cronograma__evento">
+              <span class="cronograma__hora">10:50–11:20</span>
+              <p class="cronograma__actividad">
+                Entrega de diplomas y reconocimientos
+              </p>
+            </li>
+            <li class="cronograma__evento">
+              <span class="cronograma__hora">11:20–11:35</span>
+              <p class="cronograma__actividad">
+                Palabras de despedida y agradecimiento
+              </p>
+            </li>
+            <li class="cronograma__evento">
+              <span class="cronograma__hora">11:35–11:45</span>
+              <p class="cronograma__actividad">
+                Fotografías oficiales de la promoción
+              </p>
+            </li>
+            <li class="cronograma__evento">
+              <span class="cronograma__hora">11:45</span>
+              <p class="cronograma__actividad">Cierre de la ceremonia</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ======================================================
+         6.7. Galería de fotografías
+         ====================================================== -->
+      <section class="seccion seccion__oscuro" id="galeria">
+        <div class="seccion__interior">
+          <h2 class="seccion__titulo">Galería de recuerdos</h2>
+          <span class="filigrana" aria-hidden="true"></span>
+
+          <div class="galeria" id="galeria-rejilla">
+            <button
+              class="galeria__item"
+              type="button"
+              data-ampliar
+              aria-label="Ampliar fotografía: estudiantes compartiendo durante la excursión"
+            >
+              <img
+                src="assets/foto-1.jpg"
+                alt="Estudiantes de la Promoción 2026 compartiendo dentro del autobús en una excursión"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="galeria__item"
+              type="button"
+              data-ampliar
+              aria-label="Ampliar fotografía: caminata de los estudiantes por un sendero"
+            >
+              <img
+                src="assets/foto-2.jpg"
+                alt="Estudiantes caminando por un sendero rodeado de árboles durante una caminata"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="galeria__item"
+              type="button"
+              data-ampliar
+              aria-label="Ampliar fotografía: estudiantes con vestimenta formal en un pasillo de centro de convenciones"
+            >
+              <img
+                src="assets/foto-3.jpg"
+                alt="Estudiantes con vestimenta formal en un pasillo de hotel o centro de convenciones"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="galeria__item"
+              type="button"
+              data-ampliar
+              aria-label="Ampliar fotografía: cinco estudiantes con trajes formales en un evento nocturno"
+            >
+              <img
+                src="assets/foto-4.jpg"
+                alt="Cinco estudiantes con trajes formales durante un evento nocturno"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="galeria__item galeria__item--ancha"
+              type="button"
+              data-ampliar
+              aria-label="Ampliar fotografía grupal de la Promoción 2026 con toga y birrete"
+            >
+              <img
+                src="assets/foto-5.jpg"
+                alt="Fotografía grupal de los estudiantes de la Promoción 2026 con toga y birrete en el patio de la institución"
+                loading="lazy"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vista ampliada (lightbox) -->
+      <div
+        class="lightbox"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Fotografía ampliada"
+        hidden
+      >
+        <button
+          class="lightbox__cerrar"
+          id="lightbox-cerrar"
+          type="button"
+          aria-label="Cerrar imagen ampliada"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          >
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+        <figure class="lightbox__figura">
+          <img class="lightbox__imagen" id="lightbox-imagen" alt="" />
+          <figcaption
+            class="lightbox__leyenda"
+            id="lightbox-leyenda"
+          ></figcaption>
+        </figure>
+      </div>
+
+      <!-- ======================================================
+         6.9. Confirmación de asistencia por WhatsApp
+         ====================================================== -->
+      <section class="seccion" id="confirmacion">
+        <div class="seccion__interior seccion__interior--estrecho">
+          <p class="creciente">Promoción 2026</p>
+          <h2 class="seccion__titulo">Confirmación de asistencia</h2>
+          <span class="filigrana" aria-hidden="true"></span>
+          <p class="frase caja-frase">
+            «Nos encantaría contar con tu presencia en este momento tan
+            especial.»
+          </p>
+          <p class="texto">
+            Confirma tu asistencia por WhatsApp; el mensaje se abrirá listo para
+            que puedas revisarlo y enviarlo.
+          </p>
+          <a
+            class="boton"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wa.me/59174535528?text=Hola%2C%20quisiera%20confirmar%20mi%20asistencia%20a%20la%20ceremonia%20de%20graduaci%C3%B3n%20de%20la%20Promoci%C3%B3n%202026%20de%20la%20Unidad%20Educativa%20San%20Luis."
+          >
+            Confirmar asistencia
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="cierre">
+      <span class="filigrana" aria-hidden="true"></span>
+      <p class="cierre__mensaje">
+        «Gracias por acompañarnos y formar parte de nuestra historia.»
+      </p>
+      <p class="cierre__firma">Unidad Educativa San Luis · Promoción 2026</p>
+    </footer>
+
+    <!-- ======================================================
+       6.8. Música de fondo (archivo local)
+       ====================================================== -->
+    <div class="musica">
+      <audio
+        id="musica-audio"
+        class="musica__audio"
+        src="music/Trazando_el_Mañana.mp3"
+        preload="none"
+        loop
+      ></audio>
+      <button
+        class="musica__boton"
+        id="boton-musica"
+        type="button"
+        aria-label="Reproducir música"
+        aria-pressed="false"
+      >
+        <svg
+          class="musica__icono--reproducir"
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+          />
+        </svg>
+        <svg
+          class="musica__icono--pausar"
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M9 5v14M15 5v14" />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
